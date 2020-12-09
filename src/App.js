@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './App.css';
+import "./fonts/font.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -19,7 +20,6 @@ const App = (props) => {
       <Header lang={lang} setLang={setLang} />
       <main>
           <Switch>
-
               <Route path="/tariff">
                   <Tariff lang={lang} />
               </Route>
