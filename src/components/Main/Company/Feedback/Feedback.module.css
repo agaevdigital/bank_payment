@@ -1,0 +1,139 @@
+.feedback {
+    padding-top: 81px;
+    padding-bottom: 99px;
+    background: #f5f5f5;
+}
+
+.feedback__title {
+    margin-bottom: 67px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.feedback__form {
+    margin-bottom: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback__input {
+    width: 588px;
+    height: 49px;
+    margin-right: 30px;
+    padding-left: 49px;
+    border: 1px solid #626262;
+    box-sizing: border-box;
+    outline: none;
+    background: transparent;
+}
+
+.feedback__button {
+    min-width: 194px;
+    height: 52px;
+    color: #fff;
+    background: #626262;
+}
+
+.feedback__bottom {
+    margin-left: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feedback__block {
+    display: flex;
+    align-items: flex-start;
+}
+
+.feedback__block:first-child {
+    margin-right: 86px;
+}
+
+.feedback__icon {
+    margin-right: 43px;
+    margin-top: 11px;
+    display: block;
+}
+
+.feedback__list {
+    margin: -5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__elem {
+    margin: 5px 0;
+}
+
+.feedback__link {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    transition: 0.3s;
+}
+
+.feedback__link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .feedback {
+        padding: 30px 0;
+    }
+
+    .feedback__title {
+        margin-bottom: 25px;
+    }
+
+    .feedback__form {
+        margin-bottom: 30px;
+    }
+
+    .feedback__bottom {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .feedback__block {
+        margin: 15px 0;
+        align-items: center;
+    }
+
+    .feedback__block:first-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .feedback__form {
+        flex-direction: column;
+    }
+
+    .feedback__input {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .feedback__button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .feedback__input {
+        padding-left: 15px;
+    }
+
+    .feedback__block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feedback__icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

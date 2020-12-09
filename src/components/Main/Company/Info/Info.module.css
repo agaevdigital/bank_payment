@@ -1,0 +1,29 @@
+.info {
+    padding-top: 83px;
+    padding-bottom: 79px;
+}
+
+.info__title {
+    margin-bottom: 38px;
+}
+
+.info__content {
+    max-width: 1110px;
+    margin: -12px auto;
+}
+
+.info__text {
+    padding: 12px 0px;
+    font-size: 16px;
+    letter-spacing: 0.49px;
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        padding: 30px 0;
+    }
+
+    .info__title {
+        margin-bottom: 20px;
+    }
+}

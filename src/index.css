@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+a:focus, .button:focus, .button.alt:focus, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
+    outline: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+    color: #626262;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+body {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    color: #626262;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+section, header, footer {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+.container_relative {
+    position: relative;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn_orange {
+    width: 100px;
+    height: 44px;
+    color: #fff;
+    background-color: #ff9033;
+}
+
+.btn_transparent {
+    height: 42px;
+    border: 1px solid #626262;
+    color: #626262;
+    background: transparent;
+}
+
+.btn_transparent::before {
+    content: "";
+    width: 18px;
+    height: 21px;
+    margin-right: 14px;
+    margin-left: -10px;
+    background: url("../src/assets/img/header/btn.png")
+    no-repeat center;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 26px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 21px;
+    }
+
+    .container {
+        padding: 0 24px;
+    }
+}

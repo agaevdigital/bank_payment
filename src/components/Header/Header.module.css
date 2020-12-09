@@ -1,0 +1,158 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 86px;
+    background: #fff;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+
+.header__top {
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 19px;
+    display: block;
+    background-color: #e1e1e1;
+}
+
+.header__bottom {
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header__button-auth {
+    width: 118px;
+    margin-right: 14px;
+}
+
+.header__button-register {
+    width: 129px;
+}
+
+.burger {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: none;
+    transition: 0.7s;
+}
+
+.burger__line,
+.burger__line::before,
+.burger__line::after {
+    width: 18px;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -9px;
+    position: absolute;
+    background: #ff9033;
+    transition: 0.7s;
+}
+
+.burger__line::before,
+.burger__line::after {
+    content: "";
+}
+
+.burger__line::before {
+    transform: translateY(6px);
+}
+
+.burger__line::after {
+    transform: translateY(-6px);
+}
+
+.burger_active {
+    transform: rotate(360deg);
+}
+
+.burger_active .burger__line {
+    background: transparent;
+}
+
+.burger_active .burger__line::before {
+    transform: rotate(45deg);
+}
+
+.burger_active .burger__line::after {
+    transform: rotate(-45deg);
+}
+
+
+
+
+@media screen and (max-width: 970px) {
+    .header {
+        padding-bottom: 35px;
+    }
+
+    .header__bottom {
+        flex-wrap: wrap;
+    }
+
+    .header__right {
+        width: 100%;
+        order: 5;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header__right {
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        transition: 0.7s;
+    }
+
+    .header__right_active {
+        height: 295px;
+    }
+
+    .header__buttons {
+        flex-direction: column;
+    }
+
+    .header__button {
+        width: 129px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .header__logo {
+        width: 145px;
+    }
+}
