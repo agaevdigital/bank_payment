@@ -3,6 +3,8 @@ import c from "./Footer.module.css";
 import logo from "./../../assets/img/footer/logo.png";
 import Button from "../common/Button/Button";
 import useLocale from "../../Hooks/useLocale";
+import {NavLink} from "react-router-dom";
+
 
 type PropsType = {
     lang: string
@@ -50,9 +52,9 @@ const Footer: React.FC<PropsType> = (props) => {
         <footer className={c.footer} id="footer">
             <div className="container">
                 <div className={c.footer__top}>
-                    <a href="#" className={c["footer__logo-link"]}>
+                    <NavLink to="/" className={c["footer__logo-link"]}>
                         <img src={logo} alt="logotype" className={c["footer__logo-img"]} />
-                    </a>
+                    </NavLink>
                 </div>
                 <div className={c.footer__middle}>
                     <div className={c.footer__left}>
@@ -66,10 +68,10 @@ const Footer: React.FC<PropsType> = (props) => {
                         </div>
                         <ul className={c.footer__list}>
                             <li className={c.footer__elem}>
-                                <a href="" className={c.footer__link}>{setLocale.transferLink}</a>
+                                <NavLink to="/" className={c.footer__link}>{setLocale.transferLink}</NavLink>
                             </li>
                             <li className={c.footer__elem}>
-                                <a href="" className={c.footer__link}>{setLocale.payLink}</a>
+                                <NavLink to="/payment" className={c.footer__link}>{setLocale.payLink}</NavLink>
                             </li>
                         </ul>
                     </div>
